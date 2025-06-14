@@ -24,13 +24,14 @@ $result = $crud->getData("SELECT * FROM students");
             <tbody>
             <?php if (!empty($result)): ?>
                 <?php foreach($result as $res): ?>
-                    <tr>
-                        <td><?= htmlspecialchars($res['name']) ?></td>
-                        <td><?= htmlspecialchars($res['gender']) ?></td>
-                        <td><?= htmlspecialchars($res['age']) ?></td>
-                        <td><?= htmlspecialchars($res['student_id']) ?></td>
-                        <td><?= htmlspecialchars($res['student_grade']) ?></td>
-                    </tr>
+                <tr>
+                echo "<tr>";
+                echo "<td>".$res['name']."</td>";
+                echo "<td>".$res['gender']."</td>";
+                echo "<td>".$res['age']."</td>";
+                echo "<td>".$res['student_id']."</td>";
+                echo "<td>".$res['student_grade']."</td>";
+                echo "</tr>";
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
