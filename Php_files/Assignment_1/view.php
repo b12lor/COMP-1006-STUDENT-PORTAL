@@ -1,5 +1,5 @@
 <?php
-// --- view.php --- (View Page)
+
 $pageTitle = "View Students";
 include 'header.php';
 include 'crud.php';
