@@ -1,5 +1,5 @@
 <?php
-// --- index.php --- (Form Page)
+//Form Page
 $pageTitle = "Add Student";
 include 'header.php';
 ?>
